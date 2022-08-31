@@ -126,7 +126,7 @@ html {
     position: absolute;
     top: 0;
     right: -50%;
-    height: 100%;
+    min-height: 100vh;
     width: 50%;
     background-color: rgba(255, 209, 0, 85%);
     animation: 0.75s slideLeft forwards;
@@ -135,7 +135,7 @@ html {
 }
 
 .nav-block {
-    background-color: white;
+    background-color: hwb(0 100% 0%);
     width: 100px;
     height: 0.5rem;
     margin-left: 2.6em;
@@ -232,7 +232,12 @@ ul {
     list-style-type: none;
 }
 
-.approaches ul li {
+.approaches {
+    width: 45%;
+    padding-right: 75px;
+}
+
+.approach {
     display: flex;
     align-items: flex-end;
     gap: 0.5rem;
@@ -247,6 +252,23 @@ ul {
     font-size: 25px;
     margin-bottom: 7px;
     text-transform: uppercase;
+}
+
+.more-info {
+    display: none;
+    opacity: 0;
+    font-size: 0;
+    transition: height 0.5s ease-in-out;
+}
+
+.approaches ul li:hover > .more-info {
+    display: block;
+    opacity: 1;
+    font-size: 1rem;
+}
+
+.approaches ul li:hover > .approaches ul li {
+    height: 3rem;
 }
 
 .featured-project {

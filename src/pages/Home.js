@@ -101,40 +101,58 @@ const Home = () => {
                     <aside className="approaches">
                         <ul>
                             <li>
-                                <div className="approach-number">01.</div>
-                                <p className="approach-description">
-                                    Development
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">01.</div>
+                                    <p className="approach-description">
+                                        Development{" "}
+                                    </p>
+                                </div>
+                                <div className="more-info">
+                                    Our integrated approach provides a
+                                    competitive advantage to quickly analyze,
+                                    assess and gain early control of
+                                    opportunities.
+                                </div>
                             </li>
                             <li>
-                                <div className="approach-number">02.</div>
-                                <p className="approach-description">
-                                    Architecture
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">02.</div>
+                                    <p className="approach-description">
+                                        Architecture{" "}
+                                    </p>
+                                </div>
                             </li>
                             <li>
-                                <div className="approach-number">03.</div>
-                                <p className="approach-description">
-                                    Interior Design
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">03.</div>
+                                    <p className="approach-description">
+                                        Interior Design{" "}
+                                    </p>
+                                </div>
                             </li>
                             <li>
-                                <div className="approach-number">04.</div>
-                                <p className="approach-description">
-                                    Engineering
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">04.</div>
+                                    <p className="approach-description">
+                                        Engineering{" "}
+                                    </p>
+                                </div>
                             </li>
                             <li>
-                                <div className="approach-number">05.</div>
-                                <p className="approach-description">
-                                    Maintenance
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">05.</div>
+                                    <p className="approach-description">
+                                        Construction{" "}
+                                    </p>
+                                </div>
                             </li>
                             <li>
-                                <div className="approach-number">06.</div>
-                                <p className="approach-description">
-                                    Construction
-                                </p>
+                                <div className="approach">
+                                    <div className="approach-number">06.</div>
+                                    <p className="approach-description">
+                                        Maintenance{" "}
+                                    </p>
+                                </div>
                             </li>
                         </ul>
                     </aside>
