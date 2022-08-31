@@ -129,7 +129,7 @@ html {
     right: -550px;
     min-height: 100%;
     width: 550px;
-    background-color: rgba(255, 209, 0, 80%);
+    background-color: rgba(255, 209, 0, 90%);
     animation: 0.75s slideLeft forwards;
     -webkit-animation: 0.75s slideLeft forwards;
     z-index: 10;
@@ -211,16 +211,16 @@ html {
 }
 
 .about-us-header {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .company-bio {
-    width: 50%;
+    width: 40%;
     padding-top: 2rem;
     padding-left: 6rem;
     font-size: 18px;
     line-height: 2rem;
-    margin-bottom: 400px;
+    margin-bottom: 150px;
 }
 
 section {
@@ -230,17 +230,13 @@ section {
 aside {
     position: absolute;
     right: 0;
-    top: 100px;
-    width: 40%;
+    top: 50px;
+    width: 45%;
+    margin-right: 72px;
 }
 
 ul {
     list-style-type: none;
-}
-
-.approaches {
-    width: 45%;
-    padding-right: 75px;
 }
 
 .approach {
@@ -430,7 +426,7 @@ ul {
 
 footer {
     width: calc(100% - 50px);
-    height: 200px;
+    height: 150px;
     background-color: var(--grey);
     color: white;
     display: flex;
@@ -469,4 +465,37 @@ button {
 button:hover {
     background-color: var(--yellow);
     transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+
+/* Media queries */
+@media (max-width: 940px) {
+    .company-bio {
+        width: 100%;
+        padding-left: 6rem;
+        padding-right: calc(3rem + 50px);
+        margin-bottom: 0;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        padding-left: 6rem;
+        padding-right: calc(3rem + 50px);
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    aside ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .home-header {
+        position: absolute;
+        top: 10rem;
+        left: 3rem;
+        font-size: 80px;
+        line-height: 80px;
+    }
 }

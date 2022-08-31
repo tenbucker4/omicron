@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 const Home = () => {
     const [displayNav, setDisplayNav] = useState(false);
-
-    // useEffect(() => {
-    //     if (displayNav) {
-    //         document.body.style.overflow = "hidden";
-    //     } else {
-    //         document.body.style.overflow = "visible";
-    //     }
-    // }, [displayNav]);
 
     return (
         <>
