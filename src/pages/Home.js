@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 const Home = () => {
     const [displayNav, setDisplayNav] = useState(false);
 
-    useEffect(() => {
-        if (displayNav) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "visible";
-        }
-    }, [displayNav]);
+    // useEffect(() => {
+    //     if (displayNav) {
+    //         document.body.style.overflow = "hidden";
+    //     } else {
+    //         document.body.style.overflow = "visible";
+    //     }
+    // }, [displayNav]);
 
     return (
         <>
@@ -36,23 +36,6 @@ const Home = () => {
                         <div className="menu-label">Menu</div>
                     </div>
                 </nav>
-                <div className="nav-icon">
-                    <svg
-                        onClick={() =>
-                            setDisplayNav((prevDisplay) => !prevDisplay)
-                        }
-                        className="hamburger"
-                        viewBox="0 0 10 8"
-                        width="40"
-                    >
-                        <path
-                            d="M1 1h8M1 4h 8M1 7h8"
-                            stroke="#53565a"
-                            strokeWidth="1"
-                            strokeLinecap="round"
-                        />
-                    </svg>
-                </div>
                 <div
                     className="extended-nav"
                     style={
@@ -80,6 +63,23 @@ const Home = () => {
                         <li>NEWS</li>
                         <li>CONTACT</li>
                     </ul>
+                </div>
+                <div className="nav-icon">
+                    <svg
+                        onClick={() =>
+                            setDisplayNav((prevDisplay) => !prevDisplay)
+                        }
+                        className="hamburger"
+                        viewBox="0 0 10 8"
+                        width="40"
+                    >
+                        <path
+                            d="M1 1h8M1 4h 8M1 7h8"
+                            stroke="#53565a"
+                            strokeWidth="1"
+                            strokeLinecap="round"
+                        />
+                    </svg>
                 </div>
                 <div className="arrow-left"></div>
                 <section className="about-us">
@@ -112,6 +112,9 @@ const Home = () => {
                                     competitive advantage to quickly analyze,
                                     assess and gain early control of
                                     opportunities.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -121,6 +124,14 @@ const Home = () => {
                                         Architecture{" "}
                                     </p>
                                 </div>
+                                <div className="more-info">
+                                    Our design-led process balances aesthetics
+                                    and functionality through the lens of
+                                    constructability.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
+                                </div>
                             </li>
                             <li>
                                 <div className="approach">
@@ -128,6 +139,13 @@ const Home = () => {
                                     <p className="approach-description">
                                         Interior Design{" "}
                                     </p>
+                                </div>
+                                <div className="more-info">
+                                    We create environments that inspire and
+                                    excite while responding to business needs.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -137,6 +155,14 @@ const Home = () => {
                                         Engineering{" "}
                                     </p>
                                 </div>
+                                <div className="more-info">
+                                    Our structural, mechanical and electrical
+                                    engineers ensure safety, functionality and
+                                    smart design.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
+                                </div>
                             </li>
                             <li>
                                 <div className="approach">
@@ -144,6 +170,14 @@ const Home = () => {
                                     <p className="approach-description">
                                         Construction{" "}
                                     </p>
+                                </div>
+                                <div className="more-info">
+                                    Our team provides expertise early in the
+                                    design process resulting in faster, more
+                                    efficient, and higher quality projects.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
                                 </div>
                             </li>
                             <li>
@@ -153,13 +187,61 @@ const Home = () => {
                                         Maintenance{" "}
                                     </p>
                                 </div>
+                                <div className="more-info">
+                                    We maximize the profitability of your
+                                    investment by resolving minor concerns
+                                    before they become major issues.
+                                    <br></br>
+                                    <br></br>
+                                    <a className="learn-more">Learn More</a>
+                                </div>
                             </li>
                         </ul>
                     </aside>
                 </section>
                 <div className="featured-project">
-                    <div className="project-overlay"></div>
+                    <div className="project-overlay">
+                        <div className="featured-project-heading">
+                            Featured Project
+                        </div>
+                        <a className="learn-more">View Project</a>
+                        <div className="project-block"></div>
+                    </div>
                 </div>
+                <section className="featured-material">
+                    <div className="featured-leadership">
+                        <img
+                            className="avatar"
+                            src={require("../images/avatar.png")}
+                        ></img>
+                        <div className="leadership-heading">Leadership</div>
+                        <a className="learn-more leadership">Learn More</a>
+                        <div className="leadership-block"></div>
+                    </div>
+                    <div className="featured-article">
+                        <div className="leadership-heading">News</div>
+                        <a className="learn-more leadership">Learn More</a>
+                        <div className="leadership-block"></div>
+                    </div>
+                </section>
+                <footer>
+                    <div className="company-logo">
+                        <div className="company-footer-name">OMICRON</div>
+                        <img
+                            className="omicron-logo"
+                            src={require("../images/omicron-logo.png")}
+                        ></img>
+                    </div>
+                    <div className="contact-info">
+                        <div>Vancouver</div>
+                        <div>Street Name</div>
+                        <div>contact@contact.com</div>
+                    </div>
+                    <div className="subscribe">
+                        <div>Subscribe to our mailing list</div>
+                        <button>Subscribe</button>
+                    </div>
+                </footer>
             </main>
         </>
     );
