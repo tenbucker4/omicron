@@ -22,7 +22,7 @@ html {
 }
 
 .home-screen {
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -154,6 +154,7 @@ html {
 .top-nav-list li {
     cursor: pointer;
 }
+
 .top-nav-list li:hover {
     color: white;
     transition: color 0.35s ease-in-out;
@@ -220,7 +221,7 @@ html {
     padding-left: 6rem;
     font-size: 18px;
     line-height: 2rem;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
 }
 
 section {
@@ -297,7 +298,7 @@ ul {
 .featured-project {
     width: calc(100% - 50px);
     overflow: hidden;
-    height: 700px;
+    aspect-ratio: 16 / 9;
     display: flex;
     align-items: center;
     position: relative;
@@ -317,6 +318,9 @@ ul {
 }
 
 .project-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     width: 50%;
     height: 100%;
@@ -325,34 +329,27 @@ ul {
     background-color: rgba(83, 86, 90, 0.9);
 }
 
+.featured-project-heading,
+.learn-more {
+    padding-left: 2rem;
+}
+
 .featured-project-heading {
-    font-size: 50px;
+    font-size: 40px;
     color: white;
     text-transform: uppercase;
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    padding-bottom: 1rem;
+}
+
+.learn-more {
+    padding-bottom: 0.5rem;
 }
 
 .project-block {
-    width: 100px;
+    width: 200px;
     height: 0.5rem;
     background-color: var(--yellow);
-}
-
-.project-overlay .learn-more,
-.project-block {
-    position: absolute;
-    left: 11%;
-}
-
-.project-overlay .learn-more {
-    top: 55%;
-}
-
-.project-block {
-    top: 60%;
-    width: 200px;
+    margin-left: 2rem;
 }
 
 .featured-material {
