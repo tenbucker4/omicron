@@ -21,6 +21,7 @@ html {
     position: relative;
 }
 
+/* Home screen */
 .home-screen {
     min-height: 100vh;
     width: 100%;
@@ -68,6 +69,7 @@ html {
     transition: opacity 0.75s;
 }
 
+/* Nav bar and hidden nav */
 .main-nav {
     position: fixed;
     top: 0;
@@ -187,6 +189,7 @@ html {
     }
 }
 
+/* Company bio section */
 .about-us {
     color: var(--grey);
 }
@@ -299,6 +302,7 @@ ul {
     color: var(--yellow);
 }
 
+/* Featured sections */
 .featured-project {
     width: calc(100% - 50px);
     overflow: hidden;
@@ -307,7 +311,7 @@ ul {
     align-items: center;
     position: relative;
     z-index: 1;
-    background-image: url("/src/modern-office.jpeg");
+    background-image: url("/src/images/modern-office.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -426,6 +430,7 @@ ul {
     padding-left: 0;
 }
 
+/* Footer */
 footer {
     width: calc(100% - 50px);
     height: 150px;
