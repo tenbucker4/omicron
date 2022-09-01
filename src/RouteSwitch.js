@@ -9,7 +9,7 @@ const RouteSwitch = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Home />}></Route>
+                <Route exact path="/omicron" element={<Home />}></Route>
             </Routes>
         </BrowserRouter>
     );
