@@ -22,7 +22,7 @@ html {
 }
 
 .home-screen {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -123,12 +123,12 @@ html {
     overflow: scroll;
     display: none;
     flex-direction: column;
-    gap: 3rem;
+    gap: 5vh;
     position: absolute;
     top: 0;
-    right: -550px;
+    right: -400px;
     min-height: 100%;
-    width: 550px;
+    width: 400px;
     background-color: rgba(255, 209, 0, 90%);
     animation: 0.75s slideLeft forwards;
     -webkit-animation: 0.75s slideLeft forwards;
@@ -147,7 +147,7 @@ html {
 .top-nav-list {
     position: fixed;
     top: 15vh;
-    font-size: 50px;
+    font-size: 6vh;
     color: var(--grey);
 }
 
@@ -163,7 +163,7 @@ html {
 .bottom-nav-list {
     position: fixed;
     top: 65vh;
-    font-size: 25px;
+    font-size: 4vh;
     color: white;
 }
 
@@ -547,7 +547,7 @@ button:hover {
     }
 
     .learn-more {
-        font-size: 2.5vw;
+        font-size: 2.2vw;
     }
 
     .project-block,
