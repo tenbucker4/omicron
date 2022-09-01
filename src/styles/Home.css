@@ -365,20 +365,19 @@ ul {
 .featured-article {
     position: relative;
     width: 50%;
-    height: 450px;
-    background-color: #00a9ce;
+    aspect-ratio: 1 / 1;
 }
 
 .featured-leadership {
     background-color: rgba(83, 86, 90, 40%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .avatar {
-    position: absolute;
-    bottom: 0;
-    left: 15%;
-    width: auto;
-    height: 85%;
+    width: 75%;
+    height: auto;
 }
 
 .featured-article {
@@ -411,14 +410,16 @@ ul {
 }
 
 .leadership-block {
-    left: 3rem;
-    top: 80%;
     width: 200px;
     height: 0.5rem;
     background-color: var(--yellow);
     position: absolute;
     top: 87%;
     left: 3rem;
+}
+
+.leadership {
+    padding-left: 0;
 }
 
 footer {
@@ -466,24 +467,55 @@ button:hover {
 
 /* Media queries */
 @media (max-width: 940px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding-left: 2rem;
+        padding-right: calc(2rem + 50px);
+        align-items: flex-start;
+    }
+
+    .block {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-us-header {
+        font-size: 24px;
+    }
+
+    .about-us h4 {
+        font-size: 38px;
+    }
+
+    .about-us-header,
+    .about-us h4 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .company-bio {
         width: 100%;
-        padding-left: 6rem;
-        padding-right: calc(3rem + 50px);
+        padding-left: 0;
+        padding-right: 0;
         margin-bottom: 0;
     }
 
     aside {
         position: static;
         width: 100%;
-        padding-left: 6rem;
-        padding-right: calc(3rem + 50px);
+        padding-left: 0;
+        padding-right: 0;
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
 
     aside ul {
         padding-left: 0;
+    }
+
+    .featured-project-heading {
+        font-size: 3.5vw;
     }
 }
 
@@ -494,5 +526,49 @@ button:hover {
         left: 3rem;
         font-size: 80px;
         line-height: 80px;
+    }
+
+    .project-block,
+    .leadership-block {
+        width: 30%;
+    }
+
+    .leadership-heading {
+        font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .featured-material {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .featured-leadership,
+    .featured-article {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+    }
+
+    .leadership-heading {
+        top: 65%;
+    }
+
+    .avatar {
+        width: 50%;
+    }
+
+    footer,
+    button {
+        font-size: 2.5vw;
+    }
+
+    .company-footer-name {
+        font-size: 2vw;
+    }
+
+    .omicron-logo {
+        width: 10vw;
     }
 }
