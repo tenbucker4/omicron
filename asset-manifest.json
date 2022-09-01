@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/omicron/static/css/main.b0e8e1f4.css",
+    "main.js": "/omicron/static/js/main.28a2c1d3.js",
+    "static/media/modern-office.jpeg": "/omicron/static/media/modern-office.f97cfaff484266c4aa5d.jpeg",
+    "static/media/modern-building-2.jpeg": "/omicron/static/media/modern-building-2.ded67e671fbfbc93e6aa.jpeg",
+    "static/media/modern-building.jpeg": "/omicron/static/media/modern-building.ae89e05995f6de4b6f66.jpeg",
+    "static/media/avatar.png": "/omicron/static/media/avatar.0818dc99598d230c118a.png",
+    "index.html": "/omicron/index.html",
+    "main.b0e8e1f4.css.map": "/omicron/static/css/main.b0e8e1f4.css.map",
+    "main.28a2c1d3.js.map": "/omicron/static/js/main.28a2c1d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b0e8e1f4.css",
+    "static/js/main.28a2c1d3.js"
+  ]
+}
